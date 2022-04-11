@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Roobert";
+  src: url("/fonts/Roobert-Medium.otf") format("OpenType");
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  /* visibility: hidden; */
+  /* background: #13141c; */
+  font-family: "Roobert";
+  background: #000;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}

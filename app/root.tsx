@@ -1,4 +1,5 @@
-import type { MetaFunction } from "@remix-run/node"
+import type { MetaFunction, LinksFunction } from "@remix-run/node"
+
 import {
   Links,
   LiveReload,
@@ -8,6 +9,18 @@ import {
   ScrollRestoration,
 } from "@remix-run/react"
 
+import styles from "./index.css"
+export const links: LinksFunction = () => {
+  return [
+    { rel: "stylesheet", href: styles },
+    // { rel: "stylesheet", href: lococss },
+
+    {
+      rel: "icon",
+      href: "/favicon.ico",
+    },
+  ]
+}
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
   title: "Augustine Ogiza",

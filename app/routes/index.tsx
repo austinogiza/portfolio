@@ -12,5 +12,8 @@ const Body = styled.div`
   align-items: center;
   font-size: 32px;
   color: #fff;
+  height: 100vh;
+  width: 100%;
+  font-family: "Roobert";
 `
 export default index
